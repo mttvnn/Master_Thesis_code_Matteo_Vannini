@@ -1,0 +1,83 @@
+{
+  "_comment": "Copy this file to participants.json (not committed) and fill in the participant IDs of the Mobilise-D datasets.",
+  "TVS_IDS": [
+    "<ID>",
+    "<ID>"
+  ],
+  "P3_IDS": [
+    "<ID>"
+  ],
+  "P4_IDS": [
+    "<ID>"
+  ],
+  "ORIENT_FIX_IDS": [
+    "<ID>"
+  ],
+  "REPROCESS_FIX_IDS": [
+    "<ID>"
+  ],
+  "VALID_DAY_OVERRIDE": {
+    "<ID>": [
+      1,
+      2,
+      3
+    ]
+  },
+  "CASE_IDS": [
+    "<ID A>",
+    "<ID B>"
+  ],
+  "INSPECT": {
+    "<ID>": [
+      1,
+      2
+    ]
+  },
+  "FIGURE_CASES": [
+    {
+      "patient": "<ID>",
+      "test": "Test11",
+      "kind": "FP",
+      "title": "False positive",
+      "interval": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "patient": "<ID>",
+      "test": "Test11",
+      "kind": "FN",
+      "title": "False negative",
+      "interval": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "FIGURE_STS_CASE": {
+    "patient": "<ID>",
+    "test": "Test4",
+    "interval": [
+      0.0,
+      0.0
+    ]
+  },
+  "MANUAL_CORRECTIONS": [
+    {
+      "PatientID": "<ID>",
+      "Test": "Test4",
+      "Type": "STS",
+      "Occurrence": 1,
+      "T_Start_s": 0.0,
+      "T_End_s": null
+    },
+    {
+      "PatientID": "<ID>",
+      "Test": "Test11",
+      "Type": "STS",
+      "Occurrence": 2,
+      "Delete": true
+    }
+  ]
+}
