@@ -1,0 +1,16 @@
+*.mat
+*.xlsx
+*.xls
+*.csv
+*.docx
+*.pkl
+*.so
+data/
+results/
+outputs/
+05 Results RW/
+participants.json
+participants_PRIVATE.json
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
