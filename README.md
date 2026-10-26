@@ -86,12 +86,6 @@ pip install numpy pandas scipy matplotlib openpyxl pingouin sit2standpy kielmat
 
 The code is released under the MIT License (see `LICENSE`). Sit2StandPy and KielMAT are subject to their own licenses.
 
-## Citation
-
-If you use this code, please cite the thesis:
-
-> M. Vannini, *Real-World Sit-to-Stand Transitions as a Novel Digital Mobility Outcome in Hip Fracture Recovery*, Master's thesis, Alma Mater Studiorum – Università di Bologna, 2026.
-
 ## Contact
 
 Matteo Vannini – for questions about the code, please open an issue.
