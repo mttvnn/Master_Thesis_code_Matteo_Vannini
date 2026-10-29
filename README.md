@@ -47,7 +47,7 @@ Algorithm C (JAS Detector) is an in-house detector distributed as a compiled pac
 | `sensitivity_analysis.py` | Sensitivity scenarios, day-to-day ICC, hourly profile | 4.9, 5.7 | A.1, A.3 |
 | `clinical_association.py` | Correlations with clinical measures, 5CRT groups, fracture type | 4.9, 5.8 | A.2 |
 | `pvalue_phases.py` | Comparison between recovery phases (P3 vs P4) | 5.1–5.2, 5.6 | |
-| **06 Tools for analysis** | | | |
+| **05 Tools for analysis** | | | |
 | `flip_test.py` | Detection and correction of sensor orientation | 4.7 | B.7 |
 | `inspect_mat.py`, `inspection_ids.py`, `plot_signals.py` | Inspection of recordings and signals | – | |
 | `run_jas_with_filter.py` | Single-recording run of Algorithm C with the filters | 4.7 | |
