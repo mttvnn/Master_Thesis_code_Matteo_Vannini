@@ -1,7 +1,7 @@
 # Real-world sit-to-stand transitions after proximal femoral fracture
 
 Code used in the master's thesis **"Real-World Sit-to-Stand Transitions as a Novel Digital Mobility Outcome in Hip Fracture Recovery"**
-(Matteo Vannini, MSc in Biomedical Engineering, Alma Mater Studiorum – Università di Bologna, in collaboration with Bethanien Hospital Heidelberg).
+(Matteo Vannini, MSc in Biomedical Engineering, Alma Mater Studiorum – Università di Bologna, in collaboration with research team of Bethanien Hospital Heidelberg).
 
 The code covers the whole workflow of the thesis:
 
@@ -88,4 +88,4 @@ The code is released under the MIT License (see `LICENSE`). Sit2StandPy and Kiel
 
 ## Contact
 
-Matteo Vannini – for questions about the code, please open an issue.
+Matteo Vannini - For any question please contact me at matteo.vannini4@studio.unibo.it.
