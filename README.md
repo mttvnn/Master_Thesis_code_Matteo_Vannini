@@ -1,7 +1,7 @@
 # Real-world sit-to-stand transitions after proximal femoral fracture
 
 Code used in the master's thesis **"Real-World Sit-to-Stand Transitions as a Novel Digital Mobility Outcome in Hip Fracture Recovery"**
-(Matteo Vannini, MSc in Biomedical Engineering, Alma Mater Studiorum – Università di Bologna, in collaboration with research team of Bethanien Hospital Heidelberg).
+(Matteo Vannini, MSc in Biomedical Engineering, Alma Mater Studiorum – Università di Bologna, in collaboration with the research team of Bethanien Hospital Heidelberg).
 
 The code covers the whole workflow of the thesis:
 
@@ -31,24 +31,25 @@ Algorithm C (JAS Detector) is an in-house detector distributed as a compiled pac
 | Folder / file | Content | Thesis section | Appendix |
 |---|---|---|---|
 | **01 Gold Standard** | | | |
-| `Validation_SiSt_StSi.py` | SiSt and StSi events from the pressure insoles (TVS) | 4.4 | B.1 |
-| `manual_mark_event.m`, `manual_correction.m` | Manual verification and correction of the events | 4.4 | C |
+| `Validation_SiSt_StSi.py` | SiSt and StSi events from the pressure insoles (TVS) | 4.4 | Listing A.1 |
+| `manual_mark_event.m`, `manual_correction.m` | Manual verification and correction of the events | 4.4 | Table B.1 |
 | **02 Validation** | | | |
-| `Detection_SiSt_StSi.py` | Detection with Algorithms A, B, C (baseline and optimized), walking-bout filter | 4.3, 4.5–4.7 | B.3 |
-| `LOSO_CV.py` | Leave-one-subject-out parameter optimization | 4.6 | B.4 |
-| `Confusion_matrix.py` | IoU matching, performance metrics, Bland–Altman analysis | 4.5, 5.4 | B.2 |
+| `Detection_SiSt_StSi.py` | Detection with Algorithms A, B, C (baseline and optimized), walking-bout filter on the TVS | 4.3, 4.5–4.7 | Listing A.3 |
+| `LOSO_CV.py` | Leave-one-subject-out parameter optimization | 4.6 | Listing A.4 |
+| `Confusion_matrix.py` | IoU matching and performance metrics (IoU ≥ 0.5 and ≥ 0.3) | 4.5, 5.4 | Listing A.2 |
+| `bland_altman.py` | Bland–Altman analysis and ICC of the matched transitions | 4.5, 5.4 | |
 | **03 Real World** | | | |
-| `run_all_subject.py` | Detection on the CVS recordings (Algorithm C + walking-bout filter + PFF filter) | 4.7 | B.5 |
-| `ext_filter_jas.py` | Post-processing filter of Algorithm C with PFF thresholds | 4.7 | B.6 |
+| `run_all_subject.py` | Detection on the CVS recordings (Algorithm C + walking-bout filter + PFF post-processing filter) | 4.7 | Listing A.5, A.7 |
+| `ext_filter_jas.py` | PFF post-processing filter of Algorithm C | 4.7 | Listing A.6 |
 | `filter_weartime.py` | Valid-day criteria | 4.8 | |
-| `aggregate_daily.py`, `aggregate_weekly.py` | Daily and weekly SiSt outcomes | 4.8 | B.8 |
+| `aggregate_daily.py`, `aggregate_weekly.py` | Daily and weekly SiSt outcomes | 4.8 | Listing A.9 |
 | `plot_distributions.py` | Distributions and weekday pattern of the outcomes | 5.6 | |
 | **04 Exploratory analysis** | | | |
-| `sensitivity_analysis.py` | Sensitivity scenarios, day-to-day ICC, hourly profile | 4.9, 5.7 | A.1, A.3 |
-| `clinical_association.py` | Correlations with clinical measures, 5CRT groups, fracture type | 4.9, 5.8 | A.2 |
-| `pvalue_phases.py` | Comparison between recovery phases (P3 vs P4) | 5.1–5.2, 5.6 | |
+| `sensitivity_analysis.py` | Sensitivity scenarios, day-to-day ICC, hourly profile | 4.9, 5.7 | Tables C.1, C.3 |
+| `clinical_association.py` | Correlations with clinical measures, 5CRT groups, fracture type | 4.9, 5.8 | Table C.2 |
+| `pvalue_phases.py` | Comparison between recovery phases (P3 vs P4) | 5.2, 5.6 | |
 | **05 Tools for analysis** | | | |
-| `flip_test.py` | Detection and correction of sensor orientation | 4.7 | B.7 |
+| `flip_test.py` | Detection and correction of sensor orientation | 4.7 | Listing A.8 |
 | `inspect_mat.py`, `inspection_ids.py`, `plot_signals.py` | Inspection of recordings and signals | – | |
 | `run_jas_with_filter.py` | Single-recording run of Algorithm C with the filters | 4.7 | |
 
